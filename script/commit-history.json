@@ -1,0 +1,21 @@
+[
+  {
+    "sha": "HEAD",
+    "author": "ela251643010",
+    "commit": {
+      "date": "2025-09-10T15:25:03.000Z",
+      "message": "feat: se muestra y captura la fecha de ingreso",
+      "url": "https://github.com/ela251643010/EvaluacionEC1/commit/HEAD"
+    },
+    "stats": {
+      "total": 50,
+      "additions": 30,
+      "deletions": 20,
+      "date": "2025-09-10"
+    },
+    "coverage": 100,
+    "test_count": 1,
+    "failed_tests": 0,
+    "conclusion": "success"
+  }
+]

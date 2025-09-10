@@ -1,19 +1,20 @@
 <!DOCTYPE html>
 <html xml:lang="es">
-  <head>
-    <title>Sumador</title>
-  </head>
-  <body>
-    <h1>Sumador</h1>
-    <form id="sumar-form">
-      <label for="primer-numero">Primer número:</label>
-      <input type="number" id="primer-numero" />
-      <label for="segundo-numero">Segundo número:</label>
-      <input type="number" id="segundo-numero" />
-      <input type="submit" value="Sumar" id="sumar-button" />
-    </form>
-    <div id="resultado-div"></div>
 
-    <script type="module" src="./src/presenter.js"></script>
-  </body>
+<head>
+  <title>Estacionamiento</title>
+</head>
+
+<body>
+    <p>Bienvenido al estacionamiento</p>
+  <form id="parqueo-form">
+    <label for="fecha-ingreso">Ingresa la fecha de ingreso</label>
+    <input type="date" name="fecha" id="fecha-ingresada">
+    <button type = "submit" id ="Enviar-Button">Enviar</button>
+  </form>
+  <div id="resultado-div"></div>
+  <script type="module" src="./src/presenter.js"></script>`
+
+</body>
+
 </html>
