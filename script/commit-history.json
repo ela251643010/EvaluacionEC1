@@ -38,12 +38,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "e686f6994b8df8e5ef496be436b5537bec94ebd6",
     "author": "ela251643010",
     "commit": {
       "date": "2025-09-10T15:33:52.000Z",
       "message": "feat:ingresa y muestra la hora de salida",
-      "url": "https://github.com/ela251643010/EvaluacionEC1/commit/HEAD"
+      "url": "https://github.com/ela251643010/EvaluacionEC1/commit/e686f6994b8df8e5ef496be436b5537bec94ebd6"
     },
     "stats": {
       "total": 9,
@@ -53,6 +53,25 @@
     },
     "coverage": 100,
     "test_count": 1,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "ela251643010",
+    "commit": {
+      "date": "2025-09-10T18:16:28.000Z",
+      "message": "feat:calcula el costo segun las horas que le das",
+      "url": "https://github.com/ela251643010/EvaluacionEC1/commit/HEAD"
+    },
+    "stats": {
+      "total": 23,
+      "additions": 22,
+      "deletions": 1,
+      "date": "2025-09-10"
+    },
+    "coverage": 100,
+    "test_count": 2,
     "failed_tests": 0,
     "conclusion": "success"
   }

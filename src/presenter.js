@@ -16,6 +16,7 @@ form.addEventListener("submit", (event) => {
  const fechaSalida = document.querySelector("#fecha-salida");
  const horaIngreso = document.querySelector("#hora-ingreso");
  const horaSalida = document.querySelector("#hora-salida");
+ const ticket = document.querySelector("#ticketPerdido");
  const fechaForm = document.querySelector("#parqueo-form");
  const div = document.querySelector("#resultado-div");
  const boton = document.querySelector("#Enviar-Button");
@@ -26,5 +27,6 @@ form.addEventListener("submit", (event) => {
   const [anio2,mes2,dia2] = fechaSalida.value.split("-");
   const fechaOficial2 = `${dia2}/${mes2}/${anio2}`;
   div.innerHTML = "<p>" +"La fecha de ingreso es:"  + fechaOficial + "</p>"+ "<br>" + "<p>" +"La fecha de salida es:"  + fechaOficial2 + "</p>"
-  + "<br>" + "<p>" +"La hora de ingreso es:"  + horaIngreso.value + "</p>" + "<br>" + "<p>" +"La hora de salida es:"  + horaSalida.value + "</p>  ";
+  + "<br>" + "<p>" +"La hora de ingreso es:"  + horaIngreso.value + "</p>" + "<br>" + "<p>" +"La hora de salida es:"  + horaSalida.value + "</p>  "+ 
+  "<br>"+ "<p>" +"¿Perdió su ticket?:"  + ticket.value + "</p>"; 
  });
