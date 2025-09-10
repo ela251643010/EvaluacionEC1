@@ -6,7 +6,7 @@
 </head>
 
 <body>
-    <p>Bienvenido al estacionamiento</p>
+  <p>Bienvenido al estacionamiento</p>
   <form id="parqueo-form">
     <label for="fecha-ingreso">Ingresa la fecha de ingreso</label>
     <input type="date" name="fecha" id="fecha-ingresada">
@@ -18,11 +18,11 @@
     <input type="time" name="hora" id="hora-salida">
     <label for="ticket">¿Perdio su ticket?</label>
     <select name="ticket" id="ticketPerdido">
-      <option value="si">si</option>
       <option value="no">no</option>
+      <option value="si">si</option>
     </select>
-    
-    <button type = "submit" id ="Calcular-Button">Calcular tarifa</button>
+
+    <button type="submit" id="Calcular-Button">Calcular tarifa</button>
   </form>
   <div id="resultado-div"></div>
   <script type="module" src="./src/presenter.js"></script>

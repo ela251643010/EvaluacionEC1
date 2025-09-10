@@ -7,6 +7,7 @@ import  calcularCosto from "./estacionamiento.js";
  const ticket = document.querySelector("#ticketPerdido");
  const fechaForm = document.querySelector("#parqueo-form");
  const div = document.querySelector("#resultado-div");
+ 
  fechaForm.addEventListener("submit", (event) => {
   event.preventDefault();
 
@@ -15,6 +16,6 @@ import  calcularCosto from "./estacionamiento.js";
     return;
   }
   // const horas = calcularHoras(horaIngreso.value, horaSalida.value);
-  const costo = calcularCosto(horaIngreso.value, horaSalida.value);
+  const costo = calcularCosto(horaIngreso.value, horaSalida.value, ticket.value === "no" ? false : true);
   div.innerHTML = `<p>Total a pagar:  $ ${costo}</p>`;
  });
