@@ -13,6 +13,7 @@ form.addEventListener("submit", (event) => {
   div.innerHTML = "<p>" + sumar(firstNumber, secondNumber) + "</p>";
 });*/
  const fechaIngreso = document.querySelector("#fecha-ingresada");
+ const fechaSalida = document.querySelector("#fecha-salida");
  const fechaForm = document.querySelector("#parqueo-form");
  const div = document.querySelector("#resultado-div");
  const boton = document.querySelector("#Enviar-Button");
@@ -20,5 +21,7 @@ form.addEventListener("submit", (event) => {
   event.preventDefault();
   const [anio,mes,dia] = fechaIngreso.value.split("-");
   const fechaOficial = `${dia}/${mes}/${anio}`;
-  div.innerHTML = "<p>" +"La fecha de ingreso es:"  + fechaOficial + "</p>";
+  const [anio2,mes2,dia2] = fechaSalida.value.split("-");
+  const fechaOficial2 = `${dia2}/${mes2}/${anio2}`;
+  div.innerHTML = "<p>" +"La fecha de ingreso es:"  + fechaOficial + "</p>"+ "<br>" + "<p>" +"La fecha de salida es:"  + fechaOficial2 + "</p>";
  });
