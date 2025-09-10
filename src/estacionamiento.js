@@ -1,20 +1,24 @@
-function calcularHoras(horaIngreso, horaSalida) {
+function calcularCosto(horaIngreso, horaSalida) {
   const [ingresoHoras, ingresoMinutos] = horaIngreso.split(":").map(Number);
   const [salidaHoras, salidaMinutos] = horaSalida.split(":").map(Number);
 
-  let horasTotales = salidaHoras - ingresoHoras;
-  let minutosTotales = salidaMinutos - ingresoMinutos;
+  // Convertimos ambas horas a minutos desde las 00:00
+  let totalMinutosIngreso = ingresoHoras * 60 + ingresoMinutos;
+  let totalMinutosSalida = salidaHoras * 60 + salidaMinutos;
 
-  if (minutosTotales < 0) {
-    minutosTotales += 60;
-    horasTotales -= 1;
+  // Si la salida es "menor" que el ingreso, asumimos que cruzó de día
+  if (totalMinutosSalida <= totalMinutosIngreso) {
+    totalMinutosSalida += 24 * 60; // sumamos 24 horas
   }
 
-  const total = horasTotales + (minutosTotales / 60);
-  return Math.ceil(total); // Redondear hacia arriba por fracción de hora
+  const diferenciaMinutos = totalMinutosSalida - totalMinutosIngreso;
+  const totalHoras = Math.ceil(diferenciaMinutos / 60); // redondear hacia arriba
+
+  // Determinar si es horario nocturno
+  const esHorarioNocturno = (ingresoHoras >= 22 || salidaHoras < 6);
+  const tarifa = esHorarioNocturno ? 6 : 10;
+
+  return totalHoras * tarifa;
 }
-function calcularCosto(horas) {
-    const costoPorHora = 10;
-    return horas * costoPorHora;
-}
-export { calcularCosto, calcularHoras };
+
+export default calcularCosto;

@@ -76,12 +76,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "ca48087a882ad0c558cc8d234167b737cdc9bd29",
     "author": "ela251643010",
     "commit": {
       "date": "2025-09-10T18:43:02.000Z",
       "message": "feat: calcula cuantas horas se quedo un auto en el estacionamiento y depende a eso usa la funcion anterior de calcular el costo segun las horas de estancia",
-      "url": "https://github.com/ela251643010/EvaluacionEC1/commit/HEAD"
+      "url": "https://github.com/ela251643010/EvaluacionEC1/commit/ca48087a882ad0c558cc8d234167b737cdc9bd29"
     },
     "stats": {
       "total": 63,
@@ -91,6 +91,25 @@
     },
     "coverage": 83.33,
     "test_count": 3,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "ela251643010",
+    "commit": {
+      "date": "2025-09-10T21:25:57.000Z",
+      "message": "refactor: se modifico el codigo para que le mandemos las horas y nos devuelva el costo total del parque, unimos las funciones calcular hora y costotal en una sola",
+      "url": "https://github.com/ela251643010/EvaluacionEC1/commit/HEAD"
+    },
+    "stats": {
+      "total": 47,
+      "additions": 25,
+      "deletions": 22,
+      "date": "2025-09-10"
+    },
+    "coverage": 100,
+    "test_count": 4,
     "failed_tests": 0,
     "conclusion": "success"
   }
