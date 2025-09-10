@@ -19,16 +19,35 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "f89b33bbb4fdb0f2b78a9636fe6ad12108dc36c0",
     "author": "ela251643010",
     "commit": {
       "date": "2025-09-10T15:28:00.000Z",
       "message": "feat: se captura y muestra la fecha de salida",
-      "url": "https://github.com/ela251643010/EvaluacionEC1/commit/HEAD"
+      "url": "https://github.com/ela251643010/EvaluacionEC1/commit/f89b33bbb4fdb0f2b78a9636fe6ad12108dc36c0"
     },
     "stats": {
       "total": 7,
       "additions": 6,
+      "deletions": 1,
+      "date": "2025-09-10"
+    },
+    "coverage": 100,
+    "test_count": 1,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "ela251643010",
+    "commit": {
+      "date": "2025-09-10T15:33:52.000Z",
+      "message": "feat:ingresa y muestra la hora de salida",
+      "url": "https://github.com/ela251643010/EvaluacionEC1/commit/HEAD"
+    },
+    "stats": {
+      "total": 9,
+      "additions": 8,
       "deletions": 1,
       "date": "2025-09-10"
     },
