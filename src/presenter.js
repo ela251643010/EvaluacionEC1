@@ -15,6 +15,6 @@ import  calcularCosto from "./estacionamiento.js";
     return;
   }
   // const horas = calcularHoras(horaIngreso.value, horaSalida.value);
-  const costo = calcularCosto(horas);
-  div.innerHTML = `<p>Horas cobradas: ${horas}</p> <p>Total a pagar:  $ ${costo}</p>`;
+  const costo = calcularCosto(horaIngreso.value, horaSalida.value);
+  div.innerHTML = `<p>Total a pagar:  $ ${costo}</p>`;
  });

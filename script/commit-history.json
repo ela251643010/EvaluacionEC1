@@ -95,17 +95,36 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "ac1f71dfff3d56633f8254854fcb92aa574b31a8",
     "author": "ela251643010",
     "commit": {
       "date": "2025-09-10T21:25:57.000Z",
       "message": "refactor: se modifico el codigo para que le mandemos las horas y nos devuelva el costo total del parque, unimos las funciones calcular hora y costotal en una sola",
-      "url": "https://github.com/ela251643010/EvaluacionEC1/commit/HEAD"
+      "url": "https://github.com/ela251643010/EvaluacionEC1/commit/ac1f71dfff3d56633f8254854fcb92aa574b31a8"
     },
     "stats": {
       "total": 47,
       "additions": 25,
       "deletions": 22,
+      "date": "2025-09-10"
+    },
+    "coverage": 100,
+    "test_count": 4,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "ela251643010",
+    "commit": {
+      "date": "2025-09-10T21:29:56.000Z",
+      "message": "feat: se anadio la funcionalidad de que calcule 6 bs o fraccion si el horario es nocturno",
+      "url": "https://github.com/ela251643010/EvaluacionEC1/commit/HEAD"
+    },
+    "stats": {
+      "total": 4,
+      "additions": 2,
+      "deletions": 2,
       "date": "2025-09-10"
     },
     "coverage": 100,
