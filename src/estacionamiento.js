@@ -10,15 +10,18 @@ function calcularCosto(horaIngreso, horaSalida) {
   if (totalMinutosSalida <= totalMinutosIngreso) {
     totalMinutosSalida += 24 * 60; // sumamos 24 horas
   }
-
   const diferenciaMinutos = totalMinutosSalida - totalMinutosIngreso;
   const totalHoras = Math.ceil(diferenciaMinutos / 60); // redondear hacia arriba
 
   // Determinar si es horario nocturno
   const esHorarioNocturno = (ingresoHoras >= 22 || salidaHoras < 6);
   const tarifa = esHorarioNocturno ? 6 : 10;
-
+    // Aplicar tarifa máxima si excede las 5 horas
+    if(totalHoras>5 && !esHorarioNocturno ) {
+        return 50;
+    }
   return totalHoras * tarifa;
+ 
 }
 
 export default calcularCosto;

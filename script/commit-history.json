@@ -114,12 +114,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "68235315afc9987c971bd1a59ed92f467bf1050f",
     "author": "ela251643010",
     "commit": {
       "date": "2025-09-10T21:29:56.000Z",
       "message": "feat: se anadio la funcionalidad de que calcule 6 bs o fraccion si el horario es nocturno",
-      "url": "https://github.com/ela251643010/EvaluacionEC1/commit/HEAD"
+      "url": "https://github.com/ela251643010/EvaluacionEC1/commit/68235315afc9987c971bd1a59ed92f467bf1050f"
     },
     "stats": {
       "total": 4,
@@ -129,6 +129,25 @@
     },
     "coverage": 100,
     "test_count": 4,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "ela251643010",
+    "commit": {
+      "date": "2025-09-10T21:39:35.000Z",
+      "message": "feat: se agrego la funcionalidad de que si esta mas de 5 horas en el dia solo se cobre 50 bs",
+      "url": "https://github.com/ela251643010/EvaluacionEC1/commit/HEAD"
+    },
+    "stats": {
+      "total": 10,
+      "additions": 8,
+      "deletions": 2,
+      "date": "2025-09-10"
+    },
+    "coverage": 100,
+    "test_count": 5,
     "failed_tests": 0,
     "conclusion": "success"
   }

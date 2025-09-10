@@ -10,4 +10,7 @@ describe ("Estacionamiento", () => {
      it("Deberia calcular el precio de 6 bs si la hora es nocturna", () => {
         expect (calcularCosto('22:30','04:40')).toEqual(42);
      });
+     it("Deberia calcular el precio maximo de 50 bs si se pasa de 5 horas", () => {
+        expect (calcularCosto('10:00','16:30')).toEqual(50);
+     });
 });
