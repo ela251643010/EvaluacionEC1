@@ -1,17 +1,5 @@
-import sumar from "./sumador";
+import { calcularCosto, calcularHoras } from "./estacionamiento.js";
 
-const first = document.querySelector("#primer-numero");
-const second = document.querySelector("#segundo-numero");
-const form = document.querySelector("#sumar-form");
-/*
-form.addEventListener("submit", (event) => {
-  event.preventDefault();
-
-  const firstNumber = Number.parseInt(first.  value);
-  const secondNumber = Number.parseInt(second.value);
-
-  div.innerHTML = "<p>" + sumar(firstNumber, secondNumber) + "</p>";
-});*/
  const fechaIngreso = document.querySelector("#fecha-ingresada");
  const fechaSalida = document.querySelector("#fecha-salida");
  const horaIngreso = document.querySelector("#hora-ingreso");
@@ -19,14 +7,18 @@ form.addEventListener("submit", (event) => {
  const ticket = document.querySelector("#ticketPerdido");
  const fechaForm = document.querySelector("#parqueo-form");
  const div = document.querySelector("#resultado-div");
- const boton = document.querySelector("#Enviar-Button");
+ const boton = document.querySelector("#Calcular-Button");
  fechaForm.addEventListener("submit", (event) => {
   event.preventDefault();
-  const [anio,mes,dia] = fechaIngreso.value.split("-");
-  const fechaOficial = `${dia}/${mes}/${anio}`;
-  const [anio2,mes2,dia2] = fechaSalida.value.split("-");
-  const fechaOficial2 = `${dia2}/${mes2}/${anio2}`;
-  div.innerHTML = "<p>" +"La fecha de ingreso es:"  + fechaOficial + "</p>"+ "<br>" + "<p>" +"La fecha de salida es:"  + fechaOficial2 + "</p>"
-  + "<br>" + "<p>" +"La hora de ingreso es:"  + horaIngreso.value + "</p>" + "<br>" + "<p>" +"La hora de salida es:"  + horaSalida.value + "</p>  "+ 
-  "<br>"+ "<p>" +"¿Perdió su ticket?:"  + ticket.value + "</p>"; 
+
+   if (!horaIngreso || !horaSalida) {
+    div.innerHTML = "<p>Por favor ingresa ambas horas.</p>";
+    return;
+  }
+   const horas = calcularHoras(horaIngreso.value, horaSalida.value);
+  const costo = calcularCosto(horas);
+  console.log(horas);
+  console.log(costo); 
+  console.log("llegue aca");
+  div.innerHTML = `<p>Horas cobradas: ${horas}</p> <p>Total a pagar:  $ ${costo}</p>`;
  });

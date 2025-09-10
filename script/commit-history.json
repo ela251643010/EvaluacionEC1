@@ -57,12 +57,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "f75f633b38557d0f6f3220bc2421420420b29c89",
     "author": "ela251643010",
     "commit": {
       "date": "2025-09-10T18:16:28.000Z",
       "message": "feat:calcula el costo segun las horas que le das",
-      "url": "https://github.com/ela251643010/EvaluacionEC1/commit/HEAD"
+      "url": "https://github.com/ela251643010/EvaluacionEC1/commit/f75f633b38557d0f6f3220bc2421420420b29c89"
     },
     "stats": {
       "total": 23,
@@ -72,6 +72,25 @@
     },
     "coverage": 100,
     "test_count": 2,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "ela251643010",
+    "commit": {
+      "date": "2025-09-10T18:43:02.000Z",
+      "message": "feat: calcula cuantas horas se quedo un auto en el estacionamiento y depende a eso usa la funcion anterior de calcular el costo segun las horas de estancia",
+      "url": "https://github.com/ela251643010/EvaluacionEC1/commit/HEAD"
+    },
+    "stats": {
+      "total": 63,
+      "additions": 36,
+      "deletions": 27,
+      "date": "2025-09-10"
+    },
+    "coverage": 83.33,
+    "test_count": 3,
     "failed_tests": 0,
     "conclusion": "success"
   }
