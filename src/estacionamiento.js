@@ -1,4 +1,8 @@
-function calcularCosto(horaIngreso, horaSalida) {
+function calcularCosto(horaIngreso, horaSalida, ticketPerdido = false) {
+
+    if (ticketPerdido) {
+        return 80;
+    }
   const [ingresoHoras, ingresoMinutos] = horaIngreso.split(":").map(Number);
   const [salidaHoras, salidaMinutos] = horaSalida.split(":").map(Number);
 

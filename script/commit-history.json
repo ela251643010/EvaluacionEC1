@@ -133,12 +133,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "ad2df7a62baf1e8f39c56639f2d7449ed3a24fb1",
     "author": "ela251643010",
     "commit": {
       "date": "2025-09-10T21:39:35.000Z",
       "message": "feat: se agrego la funcionalidad de que si esta mas de 5 horas en el dia solo se cobre 50 bs",
-      "url": "https://github.com/ela251643010/EvaluacionEC1/commit/HEAD"
+      "url": "https://github.com/ela251643010/EvaluacionEC1/commit/ad2df7a62baf1e8f39c56639f2d7449ed3a24fb1"
     },
     "stats": {
       "total": 10,
@@ -148,6 +148,25 @@
     },
     "coverage": 100,
     "test_count": 5,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "ela251643010",
+    "commit": {
+      "date": "2025-09-10T21:44:55.000Z",
+      "message": "refactoring: se modifico las entradas de la funcion calcularcosto para que admita si el ticket se perdio o no",
+      "url": "https://github.com/ela251643010/EvaluacionEC1/commit/HEAD"
+    },
+    "stats": {
+      "total": 9,
+      "additions": 8,
+      "deletions": 1,
+      "date": "2025-09-10"
+    },
+    "coverage": 100,
+    "test_count": 6,
     "failed_tests": 0,
     "conclusion": "success"
   }
