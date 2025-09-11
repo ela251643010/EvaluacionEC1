@@ -247,12 +247,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "e0122008d208fef685173fccd36e4a268802b9c3",
     "author": "ela251643010",
     "commit": {
       "date": "2025-09-11T09:35:39.000Z",
       "message": "feat: Calcula correctamente si se creuca media noche",
-      "url": "https://github.com/ela251643010/EvaluacionEC1/commit/HEAD"
+      "url": "https://github.com/ela251643010/EvaluacionEC1/commit/e0122008d208fef685173fccd36e4a268802b9c3"
     },
     "stats": {
       "total": 6,
@@ -261,6 +261,25 @@
       "date": "2025-09-11"
     },
     "coverage": 100,
+    "test_count": 9,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "ela251643010",
+    "commit": {
+      "date": "2025-09-11T09:38:11.000Z",
+      "message": "refactor: se corrigio las fechas para la prueba de calcular correctamente al cruzar medianoche",
+      "url": "https://github.com/ela251643010/EvaluacionEC1/commit/HEAD"
+    },
+    "stats": {
+      "total": 2,
+      "additions": 1,
+      "deletions": 1,
+      "date": "2025-09-11"
+    },
+    "coverage": 97.78,
     "test_count": 9,
     "failed_tests": 0,
     "conclusion": "success"
