@@ -31,4 +31,11 @@ describe("Estacionamiento", () => {
     expect(resultado[0].multa).toBe(true);
     expect(resultado[0].subtotal).toBe(80);
   });
+  it("Debería calcular correctamente el total para varios días", () => {
+  const resultado = calcularTotal("2025-09-10", "2025-09-12", "08:00", "10:00");
+  const total = resultado.reduce((sum, item) => sum + item.subtotal, 0);
+  // Día 1: 16h x 10 = 50 (tope), Día 2: 24h x 10 = 50 (tope), Día 3: 10h x 10 (tope contando con la noche) = 50
+  expect(total).toBe(150);
+ });
+
 });

@@ -190,12 +190,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "24d9d4aad5573272560ef19a42a9270a610f4575",
     "author": "ela251643010",
     "commit": {
       "date": "2025-09-11T02:25:35.000Z",
       "message": "refactoring: se modifico el codigo de calcularTotal para que desglose los dias y cuanto se cobro por ellos",
-      "url": "https://github.com/ela251643010/EvaluacionEC1/commit/HEAD"
+      "url": "https://github.com/ela251643010/EvaluacionEC1/commit/24d9d4aad5573272560ef19a42a9270a610f4575"
     },
     "stats": {
       "total": 207,
@@ -205,6 +205,25 @@
     },
     "coverage": 77.27,
     "test_count": 6,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "ela251643010",
+    "commit": {
+      "date": "2025-09-11T09:33:22.000Z",
+      "message": "feat: calcula el total en varios dias",
+      "url": "https://github.com/ela251643010/EvaluacionEC1/commit/HEAD"
+    },
+    "stats": {
+      "total": 233,
+      "additions": 124,
+      "deletions": 109,
+      "date": "2025-09-11"
+    },
+    "coverage": 97.78,
+    "test_count": 7,
     "failed_tests": 0,
     "conclusion": "success"
   }
