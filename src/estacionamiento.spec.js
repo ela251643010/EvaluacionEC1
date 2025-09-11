@@ -45,6 +45,12 @@ describe("Estacionamiento", () => {
   // Día 3: desde 00:00 hasta 04:00 → 4h x 6 = 24
   expect(total).toBe(86);
 });
+it("Debería calcular correctamente al cruzar la medianoche", () => {
+  const resultado = calcularTotal("2025-09-10", "2025-09-10", "23:00", "02:00");
+  const total = resultado.reduce((sum, item) => sum + item.subtotal, 0);
+  // 3h x 6 = 18
+  expect(total).toBe(18);
+});
 
 
 });
