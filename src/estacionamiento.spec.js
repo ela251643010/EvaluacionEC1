@@ -37,5 +37,14 @@ describe("Estacionamiento", () => {
   // Día 1: 16h x 10 = 50 (tope), Día 2: 24h x 10 = 50 (tope), Día 3: 10h x 10 (tope contando con la noche) = 50
   expect(total).toBe(150);
  });
+ it("Debería calcular correctamente un día intermedio completo", () => {
+  const resultado = calcularTotal("2025-09-10", "2025-09-12", "22:00", "04:00");
+  const total = resultado.reduce((sum, item) => sum + item.subtotal, 0);
+  // Día 1: desde 22:00 hasta 23:59 → 2h x 6 = 12
+  // Día 2: día completo → 24h x 10 = 50 (tope)
+  // Día 3: desde 00:00 hasta 04:00 → 4h x 6 = 24
+  expect(total).toBe(86);
+});
+
 
 });

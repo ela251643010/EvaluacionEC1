@@ -209,12 +209,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "af929fd91f43da6ca4fc32d9c29782660ef05b6c",
     "author": "ela251643010",
     "commit": {
       "date": "2025-09-11T09:33:22.000Z",
       "message": "feat: calcula el total en varios dias",
-      "url": "https://github.com/ela251643010/EvaluacionEC1/commit/HEAD"
+      "url": "https://github.com/ela251643010/EvaluacionEC1/commit/af929fd91f43da6ca4fc32d9c29782660ef05b6c"
     },
     "stats": {
       "total": 233,
@@ -224,6 +224,25 @@
     },
     "coverage": 97.78,
     "test_count": 7,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "ela251643010",
+    "commit": {
+      "date": "2025-09-11T09:34:32.000Z",
+      "message": "feat:Calcula correctamente un dia intermedio",
+      "url": "https://github.com/ela251643010/EvaluacionEC1/commit/HEAD"
+    },
+    "stats": {
+      "total": 9,
+      "additions": 9,
+      "deletions": 0,
+      "date": "2025-09-11"
+    },
+    "coverage": 97.78,
+    "test_count": 8,
     "failed_tests": 0,
     "conclusion": "success"
   }
