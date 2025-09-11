@@ -1,19 +1,34 @@
+import calcularTotal from "./estacionamiento";
 
-import  calcularCosto from "./estacionamiento.js";
-describe ("Estacionamiento", () => {
-    it ("Deberia calcular el costo del estacionamiento por hora", () => {
-       expect(calcularCosto( '14:00', '16:00')).toEqual(20); 
-    });
-    it ("Deberia calcular las horas del estacionamiento", () => {
-         expect(calcularCosto('14:00', '16:30')).toEqual(30);
-     });
-     it("Deberia calcular el precio de 6 bs si la hora es nocturna", () => {
-        expect (calcularCosto('22:30','04:40')).toEqual(42);
-     });
-     it("Deberia calcular el precio maximo de 50 bs si se pasa de 5 horas", () => {
-        expect (calcularCosto('10:00','16:30')).toEqual(50);
-     });
-     it("Deberia cobrar 80 bs si se pierde el ticket", () => {
-        expect (calcularCosto('10:00','16:30', true)).toEqual(80);
-     });
+describe("Estacionamiento", () => {
+  it("Debería calcular el costo del estacionamiento por hora", () => {
+    const resultado = calcularTotal("2025-09-10", "2025-09-10", "14:00", "16:00");
+    const total = resultado.reduce((sum, item) => sum + item.subtotal, 0);
+    expect(total).toEqual(20);
+  });
+
+  it("Debería calcular las horas del estacionamiento", () => {
+    const resultado = calcularTotal("2025-09-10", "2025-09-10", "14:00", "16:30");
+    const total = resultado.reduce((sum, item) => sum + item.subtotal, 0);
+    expect(total).toEqual(30);
+  });
+
+  it("Debería calcular el precio de Bs 6 si la hora es nocturna", () => {
+    const resultado = calcularTotal("2025-09-10", "2025-09-11", "22:30", "04:40");
+    const total = resultado.reduce((sum, item) => sum + item.subtotal, 0);
+    expect(total).toEqual(42); // 7h * Bs 6 = 42
+  });
+
+  it("Debería calcular el precio máximo de Bs 50 si se pasa de 5 horas", () => {
+    const resultado = calcularTotal("2025-09-10", "2025-09-10", "10:00", "16:30");
+    const total = resultado.reduce((sum, item) => sum + item.subtotal, 0);
+    expect(total).toEqual(50); // Tope aplicado
+  });
+
+  it("Debería cobrar Bs 80 si se pierde el ticket", () => {
+    const resultado = calcularTotal("2025-09-10", "2025-09-10", "10:00", "16:30", true);
+    expect(resultado.length).toBe(1);
+    expect(resultado[0].multa).toBe(true);
+    expect(resultado[0].subtotal).toBe(80);
+  });
 });

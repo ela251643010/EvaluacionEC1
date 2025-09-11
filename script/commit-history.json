@@ -171,12 +171,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "a4c1c7e4ecbb84a28eb15cd42391f4e62b2b3833",
     "author": "ela251643010",
     "commit": {
       "date": "2025-09-10T21:50:09.000Z",
       "message": "feat: se aplico la norma de que si perdiste el ticket te cobre 80 bs sin importar el numero de horas que se estaciono",
-      "url": "https://github.com/ela251643010/EvaluacionEC1/commit/HEAD"
+      "url": "https://github.com/ela251643010/EvaluacionEC1/commit/a4c1c7e4ecbb84a28eb15cd42391f4e62b2b3833"
     },
     "stats": {
       "total": 11,
@@ -185,6 +185,25 @@
       "date": "2025-09-10"
     },
     "coverage": 100,
+    "test_count": 6,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "ela251643010",
+    "commit": {
+      "date": "2025-09-11T02:25:35.000Z",
+      "message": "refactoring: se modifico el codigo de calcularTotal para que desglose los dias y cuanto se cobro por ellos",
+      "url": "https://github.com/ela251643010/EvaluacionEC1/commit/HEAD"
+    },
+    "stats": {
+      "total": 207,
+      "additions": 148,
+      "deletions": 59,
+      "date": "2025-09-11"
+    },
+    "coverage": 77.27,
     "test_count": 6,
     "failed_tests": 0,
     "conclusion": "success"
